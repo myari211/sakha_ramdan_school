@@ -1,3 +1,3 @@
-@extend('guest.layouts.app')
+@extends('guest.layouts.app')
 @section('content')
 @endsection
