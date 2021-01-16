@@ -48,7 +48,7 @@
                     <ul>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-success btn-sm">Daftar</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="location.href='/forms';">Daftar</button>
                 </div>
             </nav>
         </div>
