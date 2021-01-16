@@ -17,5 +17,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+//guest
 Route::get('/', 'Guest\GuestController@index');
-Route::get('/facilites', 'Guest\GuestController@facilites');
+Route::get('/facilities', 'Guest\GuestController@facilites');
+
+//form-pendaftaran
+Route::get('/forms', 'Guest\FormController@index');

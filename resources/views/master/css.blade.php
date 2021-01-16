@@ -9,3 +9,5 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/icon.ico') }}">
+<title>Yayasan Pendidikan Sakha Ramdan Aditya</title>

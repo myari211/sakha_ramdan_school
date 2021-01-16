@@ -12,6 +12,6 @@ class GuestController extends Controller
     }
 
     public function facilites(){
-        return view('guest.facilites');
+        return view('guest.facilities');
     }
 }
