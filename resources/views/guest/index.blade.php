@@ -66,7 +66,8 @@
                 <h2 class="oswald">Yayasan Pendidikan Sakha Ramdan Aditya</h2>
             </div>
         </div>
-        <div class="row mt-4">
+        @include('guest.greeting')
+        <div class="row mt-5">
             <div class="col-lg-4">
                 <div class="card rounded-0">
                     <div class="card-body">

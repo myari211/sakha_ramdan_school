@@ -22,7 +22,7 @@
                             </a>
                         </li>
                         <li class="nav-item mr-3">
-                            <a class="nav-link" href="/facilities">
+                            <a class="nav-link" href="{{ route('facilities') }}">
                                 <i class="fas fa-school"></i>
                                 Facilities
                             </a>
@@ -34,7 +34,7 @@
                             </a>
                         </li>
                         <li class="nav-item mr-3">
-                            <a class="nav-link">
+                            <a class="nav-link" href="/gallery">
                                 <i class="fas fa-image"></i>
                                 Galery
                             </a>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="col-md-3 mb-md-0 mb-3">
                             <div class="row">
-                                <h4>Social Media</h4>
+                                <h4>Find Us On</h4>
                             </div>
                             <div class="row">
                                 <button type="button" class="btn btn-primary btn-sm">

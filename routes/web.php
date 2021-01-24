@@ -18,8 +18,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //guest
-Route::get('/', 'Guest\GuestController@index');
-Route::get('/facilities', 'Guest\GuestController@facilites');
+    Route::get('/', 'Guest\GuestController@index')->name('home');
+    Route::get('/facilities', 'Guest\GuestController@facilites')->name('facilities');
 
-//form-pendaftaran
-Route::get('/forms', 'Guest\FormController@index');
+    //form-pendaftaran
+    Route::get('/forms', 'Guest\FormController@index');
+
+    //galery
+    Route::get('/gallery', 'Guest\GuestController@gallery');

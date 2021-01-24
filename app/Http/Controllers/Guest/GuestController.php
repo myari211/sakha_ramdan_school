@@ -14,4 +14,8 @@ class GuestController extends Controller
     public function facilites(){
         return view('guest.facilities');
     }
+
+    public function gallery(){
+        return view('guest.gallery');
+    }
 }
