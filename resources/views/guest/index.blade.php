@@ -94,7 +94,7 @@
                 <div class="card rounded-0">
                     <div class="card-body">
                         <div class="row d-flex justify-content-center">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:300px; height:150px;">
+                            <img src="{{ asset('img/slider.JPG') }}" style="width:300px; height:150px;">
                         </div>
                         <div class="row mt-4 d-flex justify-content-center">
                             <h5>Sekolah Menengah Kejuruan</h5>
