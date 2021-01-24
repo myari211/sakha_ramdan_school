@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
     Route::get('/facilities', 'Guest\GuestController@facilites')->name('facilities');
 
     //form-pendaftaran
-    Route::get('/forms', 'Guest\FormController@index');
+    Route::get('/forms', 'Guest\FormController@index')->name('forms');
 
     //galery
-    Route::get('/gallery', 'Guest\GuestController@gallery');
+    Route::get('/gallery', 'Guest\GuestController@gallery')->name('gallery');

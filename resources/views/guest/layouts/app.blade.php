@@ -16,7 +16,7 @@
                 <div class="row">
                     <ul class="navbar-nav">
                         <li class="nav-item mr-3">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="{{ route('home') }}">
                                 <i class="fas fa-home"></i>
                                 Beranda
                             </a>
@@ -34,7 +34,7 @@
                             </a>
                         </li>
                         <li class="nav-item mr-3">
-                            <a class="nav-link" href="/gallery">
+                            <a class="nav-link" href="{{ route('gallery')">
                                 <i class="fas fa-image"></i>
                                 Galery
                             </a>
