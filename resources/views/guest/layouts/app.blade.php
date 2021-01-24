@@ -34,7 +34,7 @@
                             </a>
                         </li>
                         <li class="nav-item mr-3">
-                            <a class="nav-link" href="{{ route('gallery')">
+                            <a class="nav-link" href="{{ route('gallery') }}">
                                 <i class="fas fa-image"></i>
                                 Galery
                             </a>
