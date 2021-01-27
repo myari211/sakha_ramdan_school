@@ -162,7 +162,7 @@
                                 <h4>Kegemaran Siswa</h4>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row d-flex justify-content-center">
                             <div class="col-lg-5">
                                 <div class="md-form">
                                     <input type="text" name="kesenian" class="form-control" id="kesenian">

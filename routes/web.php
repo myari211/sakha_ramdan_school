@@ -25,4 +25,11 @@ use Illuminate\Support\Facades\Route;
     Route::get('/forms', 'Guest\FormController@index')->name('forms');
 
     //galery
-    Route::get('/gallery', 'Guest\GuestController@gallery')->name('gallery');
+    Route::get('/gallery/tkj', 'Guest\GuestController@gallery_smk');
+    Route::get('/gallery/tbsm', 'Guest\GuestController@gallery_tbsm');
+    Route::get('/gallery/akl', 'Guest\GuestController@gallery_akl');
+
+    //profile
+    Route::get('/smk', 'Guest\GuestController@smk')->name('smk');
+    Route::get('/smp', 'Guest\GuestController@smp')->name('smp');
+    Route::get('/ut', 'Guest\GuestController@ut');

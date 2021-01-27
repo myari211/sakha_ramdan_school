@@ -3,15 +3,30 @@
         @include('master.css')
     </head>
     <body>
+    <div class="d-none d-lg-block">
         <div class="fixed-top">
             <div class="row">
-                <div class="col-lg-12 bg-success d-inline-flex align-items-center">
-                    <img src="{{ asset('img/logo.png') }}" class="logo">
-                    <h3 class="text-white ml-3 mt-1">
-                        <strong>Yayasan Pendidikan Sakha Ramdan Aditya</strong>
-                    </h3>
+                <div class="col-lg-12 bg-success d-flex justify-content-between align-items-center">
+                    <div class="row d-flex align-items-center ml-3">
+                        <img src="{{ asset('img/logo.png') }}" class="logo">
+                        <h3 class="text-white ml-3 mt-1">
+                            <strong>Yayasan Pendidikan Sakha Ramdan Aditya</strong>
+                        </h3>
+                    </div>
+                    <div class="mr-4">
+                        <button type="button" class="btn btn-md z-depth-0 p-1">
+                            <i class="fab fa-facebook text-white" style="font-size:20px;" onclick="window.open('https://www.facebook.com/1096706560507678/')"></i>
+                        </button>
+                        <button type="button" class="btn z-depth-0 btn-md p-1" onclick="window.open('https://instagram.com/smk_gemakaryabahana?igshid=1159lsnmwwql4')">
+                            <i class="fab fa-instagram text-white" style="font-size:20px;"></i>
+                        </button>
+                        <button type="button" class="btn z-depth-0 lighten-1 btn-md p-1">
+                            <i class="fab fa-twitter text-white" style="font-size:20px;"></i>
+                        </button>                    
+                    </div>
                 </div>
             </div>
+            <div class="row warning-color-dark" style="height:7px;"></div>
             <nav class="navbar navbar-expand-lg navbar-dark amber d-flex justify-content-between pt-0 pb-0">
                 <div class="row">
                     <ul class="navbar-nav">
@@ -27,125 +42,175 @@
                                 Facilities
                             </a>
                         </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link" data-toggle="modal" data-target="#submenu">
+                        <li class="nav-item dropdown mr-3">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-graduation-cap"></i>
                                 Profile
                             </a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item menu-hover" href="/smp">SMP</a>
+                                <a class="dropdown-item menu-hover" href="/smk">SMK Gema Karya Bahana</a>
+                                <a class="dropdown-item menu-hover" href="/ut">Universitas Terbuka</a>
+                            </div>
                         </li>
                         <li class="nav-item mr-3">
-                            <a class="nav-link" href="{{ route('gallery') }}">
+                            <a class="nav-link" href="#">
                                 <i class="fas fa-image"></i>
                                 Galery
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-3">
                             <a class="nav-link">
                                 <i class="fas fa-calendar"></i>
                                 Event
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fas fa-building"></i>
+                                Yayasan
+                            </a>
+                        </li>
                     <ul>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-success btn-sm" onclick="location.href='/forms';">Daftar</button>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#login">Log In</button>
                 </div>
             </nav>
         </div>
-        @yield('content')            
-            <footer class="page-footer font-small amber pt-4 mt-5">
-                <div class="container-fluid text-center text-md-left">
-                    <div class="row">
-                        <div class="col-md-6 mt-md-0 mt-3">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 ml-4">
-                                    <h4>Address</h4>
-                                    <p>Jl. Raya Pekayon 45-43, RT.004/RW.001,
-                                        <br />Pekayon Jaya, Kec. Bekasi Sel., 
-                                        <br />Kota Bks, Jawa Barat 17148
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="clearfix w-100 d-md-none pb-3">
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            
-                        </div>
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <div class="row">
-                                <h4>Find Us On</h4>
-                            </div>
-                            <div class="row">
-                                <button type="button" class="btn btn-primary btn-sm">
-                                    <i class="fab fa-facebook" style="font-size:15px;" onclick="window.open('https://www.facebook.com/1096706560507678/')"></i>
-                                </button>
-                                <button type="button" class="btn pink btn-sm" onclick="window.open('https://instagram.com/smk_gemakaryabahana?igshid=1159lsnmwwql4')">
-                                    <i class="fab fa-instagram" style="font-size:15px;"></i>
-                                </button>
-                                <button type="button" class="btn blue lighten-1 btn-sm">
-                                    <i class="fab fa-twitter" style="font-size:15px;"></i>
-                                </button>
-                            </div>
-                        </div>
+            @yield('content')           
+        </div>
+        <div class="d-block d-md-none">
+            <!--Navbar-->
+            <div class="fixed-top">
+            <div class="row">
+                <div class="col-lg-12 bg-success d-flex justify-content-between align-items-center">
+                    <div class="row d-flex align-items-center ml-3">
+                        <img src="{{ asset('img/logo.png') }}" style="width:70px; height:70px;">
                     </div>
-                </div>
-                <div class="footer-copyright text-center py-3 success-color-dark mt-4">
-                    2021 Copyright &copy; Yayasan Pendidikan Sakha Ramdan Aditya    
-                </div>
-            </footer>
-        @include('master.js')
-
-<!-- Modal -->
-    <div class="modal fade" id="submenu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content amber">
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card bg-success animate">
-                                <div class="card-body">
-                                    <div class="row mt-2 d-flex justify-content-center">
-                                        <i class="fas fa-school font-menu text-white"></i>
-                                    </div>
-                                    <div class="row d-flex justify-content-center mt-3">
-                                        <h6 class="text-white">Sekolah Menengah Pertama</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card bg-success">
-                                <div class="card-body">
-                                    <div class="row mt-2 d-flex justify-content-center">
-                                        <i class="fas fa-building font-menu text-white"></i>
-                                    </div>
-                                    <div class="row d-flex justify-content-center mt-3">
-                                        <h6 class="text-white">Sekolah Menengah Kejuruan</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card bg-success">
-                                <div class="card-body">
-                                    <div class="row mt-2 d-flex justify-content-center">
-                                        <i class="fas fa-university font-menu text-white"></i>
-                                    </div>
-                                    <div class="row d-flex justify-content-center mt-3">
-                                    <h6 class="text-white">Universitas Terbuka</h6>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mr-4">
+                        <button type="button" class="btn btn-md z-depth-0 p-1">
+                            <i class="fab fa-facebook text-white" style="font-size:20px;" onclick="window.open('https://www.facebook.com/1096706560507678/')"></i>
+                        </button>
+                        <button type="button" class="btn z-depth-0 btn-md p-1" onclick="window.open('https://instagram.com/smk_gemakaryabahana?igshid=1159lsnmwwql4')">
+                            <i class="fab fa-instagram text-white" style="font-size:20px;"></i>
+                        </button>
+                        <button type="button" class="btn z-depth-0 lighten-1 btn-md p-1">
+                            <i class="fab fa-twitter text-white" style="font-size:20px;"></i>
+                        </button>                    
                     </div>
-                </div>
                 </div>
             </div>
-        </div>  
+            <div class="row warning-color-dark" style="height:7px;"></div>
+            <nav class="navbar navbar-expand-lg navbar-dark amber d-flex justify-content-between pt-0 pb-0">
+        
+
+            <!-- Navbar brand -->
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="{{ route('home') }}">
+                                <i class="fas fa-home"></i>
+                                Beranda
+                            </a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="{{ route('facilities') }}">
+                                <i class="fas fa-school"></i>
+                                Facilities
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown mr-3">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-graduation-cap"></i>
+                                Profile
+                            </a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item menu-hover" href="/smp">SMP</a>
+                                <a class="dropdown-item menu-hover" href="/smk">SMK Gema Karya Bahana</a>
+                                <a class="dropdown-item menu-hover" href="/ut">Universitas Terbuka</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-image"></i>
+                                Galery
+                            </a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link">
+                                <i class="fas fa-calendar"></i>
+                                Event
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fas fa-building"></i>
+                                Yayasan
+                            </a>
+                        </li>
+                    <ul>
+            <!-- Links -->
+
+            <form class="form-inline">
+                <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                </div>
+            </form>
+            </div>
+            <!-- Collapsible content -->
+
+            </nav>
+        </div>
+            <!--/.Navbar-->
+            @yield('responsive')
+        </div>
+        @include('master.js')
+        @include('guest.layouts.footer')
+        <!-- Modal -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color:#fafafa;">
+                    <div class="modal-body pb-5">
+                        <div class="row mt-4">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <h4>Log In</h4>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center mt-4">
+                            <div class="col-lg-10">
+                                <div class="md-form md-outline">
+                                    <input type="text" name="username" class="form-control" id="username">
+                                    <label for="username">Username</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="md-form md-outline mt-0">
+                                    <input type="password" name="password" class="form-control" id="password">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-10">
+                                <button type="submit" class="btn btn-amber btn-md btn-block">Log In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
