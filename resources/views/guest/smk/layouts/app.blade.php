@@ -141,6 +141,7 @@
                                 Profile
                             </a>
                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item menu-hover" href="/sd">SD</a>
                                 <a class="dropdown-item menu-hover" href="/smp">SMP</a>
                                 <a class="dropdown-item menu-hover" href="/smk">SMK Gema Karya Bahana</a>
                                 <a class="dropdown-item menu-hover" href="/ut">Universitas Terbuka</a>
