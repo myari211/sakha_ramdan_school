@@ -1,5 +1,5 @@
 <div class="d-none d-lg-block">
-    <footer class="page-footer font-small amber pt-4 mt-5">
+    <footer class="page-footer font-small orange pt-4 mt-5">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-between align-items-center">
@@ -17,13 +17,13 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright text-center py-3 success-color-dark mt-4">
+        <div class="footer-copyright text-center py-3 teal darken-3 mt-4 text-white">
             2021 Copyright &copy; Yayasan Pendidikan Sakha Ramdan Aditya    
         </div>
     </footer>
 </div>
 <div class="d-block d-md-none">
-    <footer class="page-footer font-small amber pt-4 mt-5">
+    <footer class="page-footer font-small orange pt-4 mt-5">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center align-items-center">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright text-center py-3 success-color-dark mt-4">
+        <div class="footer-copyright text-center py-3 teal darken-3 mt-4 text-white">
             <small>2021 Copyright &copy; Yayasan Pendidikan Sakha Ramdan Aditya</small>
         </div>
     </footer>

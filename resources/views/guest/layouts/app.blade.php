@@ -6,7 +6,7 @@
     <div class="d-none d-lg-block">
         <div class="fixed-top">
             <div class="row">
-                <div class="col-lg-12 bg-success d-flex justify-content-between align-items-center">
+                <div class="col-lg-12 teal darken-3 d-flex justify-content-between align-items-center">
                     <div class="row d-flex align-items-center ml-3">
                         <img src="{{ asset('img/logo.png') }}" class="logo">
                         <h3 class="text-white ml-3 mt-1">
@@ -26,8 +26,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row warning-color-dark" style="height:7px;"></div>
-            <nav class="navbar navbar-expand-lg navbar-dark amber d-flex justify-content-between pt-0 pb-0">
+            <div class="row orange" style="height:7px;"></div>
+            <nav class="navbar navbar-expand-lg navbar-dark orange lighten-2 d-flex justify-content-between pt-0 pb-0">
                 <div class="row">
                     <ul class="navbar-nav">
                         <li class="nav-item mr-3">
@@ -48,6 +48,7 @@
                                 Profile
                             </a>
                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item menu-hover" href="/sd">SD</a>
                                 <a class="dropdown-item menu-hover" href="/smp">SMP</a>
                                 <a class="dropdown-item menu-hover" href="/smk">SMK Gema Karya Bahana</a>
                                 <a class="dropdown-item menu-hover" href="/ut">Universitas Terbuka</a>
@@ -74,7 +75,7 @@
                     <ul>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#login">Log In</button>
+                    <button type="button" class="btn teal darken-3 btn-sm text-white" data-toggle="modal" data-target="#login">Log In</button>
                 </div>
             </nav>
         </div>
@@ -84,7 +85,7 @@
             <!--Navbar-->
             <div class="fixed-top">
             <div class="row">
-                <div class="col-lg-12 bg-success d-flex justify-content-between align-items-center">
+                <div class="col-lg-12 teal darken-3 d-flex justify-content-between align-items-center">
                     <div class="row d-flex align-items-center ml-3">
                         <img src="{{ asset('img/logo.png') }}" style="width:70px; height:70px;">
                     </div>
@@ -101,18 +102,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row warning-color-dark" style="height:7px;"></div>
-            <nav class="navbar navbar-expand-lg navbar-dark amber d-flex justify-content-between pt-0 pb-0">
+            <div class="row orange" style="height:7px;"></div>
+            <nav class="navbar navbar-expand-lg navbar-dark orange lighten-2 pt-0 pb-0">
         
 
             <!-- Navbar brand -->
-
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
+            <div class="row d-flex justify-content-between">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button type="button" class="btn btn-md teal darken-3 text-white">Log In</button>
+            </div>
+                
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="basicExampleNav">
 
@@ -161,12 +162,6 @@
                         </li>
                     <ul>
             <!-- Links -->
-
-            <form class="form-inline">
-                <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                </div>
-            </form>
             </div>
             <!-- Collapsible content -->
 
