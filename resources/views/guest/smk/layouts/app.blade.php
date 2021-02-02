@@ -114,7 +114,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div type="d-flex justify-content-end">
-                    <button type="button" class="btn btn-md teal darken-3 text-white">Log In</button>
+                    <button type="button" class="btn btn-md teal darken-3 text-white" data-toggle="modal" data-target="#login">Log In</button>
+                    <button type="button" class="btn btn-md teal darken-3 text-white" onclick="openRegis();" id="regis">Daftar</button>
                 </div>
             </div>
                 
@@ -167,12 +168,6 @@
                         </li>
                     <ul>
             <!-- Links -->
-
-            <form class="form-inline">
-                <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                </div>
-            </form>
             </div>
             <!-- Collapsible content -->
 
