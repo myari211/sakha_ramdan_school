@@ -1,0 +1,3 @@
+$('#advertisment').modal({
+    show:true,
+})

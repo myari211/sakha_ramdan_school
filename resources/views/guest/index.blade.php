@@ -60,7 +60,7 @@
   <!--/.Controls-->
 </div>
 <!--/.Carousel Wrapper-->
-    <div class="container">
+    <!-- <div class="container">
         <div class="row mt-4">
             <div class="col-lg-12 d-flex justify-content-center">
                 <h2 class="oswald">Yayasan Pendidikan Sakha Ramdan Aditya</h2>
@@ -123,103 +123,25 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
-
-    <div class="modal fade" id="smp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+        <div class="modal fade" id="advertisment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header success-color-dark">
-                        <h5 class="modal-title text-white" id="exampleModalLabel">SMP</h5>
-                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-lg-6 d-flex align-items-center">
-                                <img src="{{ asset('img/slider.jpg') }}" style="width:380px;">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h4>Sekolah Menengah Pertama</h4>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-lg-12">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, eget porttitor odio placerat a. Ut varius aliquam maximus. Nulla metus turpis, lobortis nec enim ut, auctor auctor velit. Quisque imperdiet, neque dignissim aliquet dapibus, dui purus mollis sapien, in finibus ex velit eget lectus. Duis ac massa viverra, sodales ligula id, finibus ante. Nullam faucibus fermentum elit, et interdum mi fringilla eleifend</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="smk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header success-color-dark">
-                        <h5 class="modal-title text-white" id="exampleModalLabel">SMK</h5>
-                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ini Iklan</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="row">
-                            <div class="col-lg-6 d-flex align-items-center">
-                                <img src="{{ asset('img/slider.jpg') }}" style="width:380px;">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h4>SMP BlaBlaBla</h4>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-lg-12">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, eget porttitor odio placerat a. Ut varius aliquam maximus. Nulla metus turpis, lobortis nec enim ut, auctor auctor velit. Quisque imperdiet, neque dignissim aliquet dapibus, dui purus mollis sapien, in finibus ex velit eget lectus. Duis ac massa viverra, sodales ligula id, finibus ante. Nullam faucibus fermentum elit, et interdum mi fringilla eleifend</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        ...
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="ut" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header success-color-dark">
-                        <h5 class="modal-title text-white" id="exampleModalLabel">UT</h5>
-                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-lg-6 d-flex align-items-center">
-                                <img src="{{ asset('img/slider.jpg') }}" style="width:380px;">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h4>SMP BlaBlaBla</h4>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-lg-12">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, eget porttitor odio placerat a. Ut varius aliquam maximus. Nulla metus turpis, lobortis nec enim ut, auctor auctor velit. Quisque imperdiet, neque dignissim aliquet dapibus, dui purus mollis sapien, in finibus ex velit eget lectus. Duis ac massa viverra, sodales ligula id, finibus ante. Nullam faucibus fermentum elit, et interdum mi fringilla eleifend</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+@include('master.js')
 @endsection
 
 @section('responsive')
@@ -447,4 +369,29 @@
                 </div>
             </div>
         </div>
+        <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="advertising" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+@include('master.js')
 @endsection

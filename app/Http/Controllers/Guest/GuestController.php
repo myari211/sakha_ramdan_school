@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Ramsey\Uuid\Uuid;
+use App\User;
+use App\Pendaftaran;
 
 class GuestController extends Controller
 {
@@ -41,5 +44,18 @@ class GuestController extends Controller
 
     public function ut(){
         return view('guest.ut.ut');
+    }
+
+    public function pendaftaran(Request $request){
+        $validate = Validator::make($request->all());
+
+        if($validate->fails()){
+            return response()->toJson();
+        }
+
+        User::create([
+            'id' => Uuid::uuid4()->toString(),
+            'name' => $request->first_name
+        ]);
     }
 }
