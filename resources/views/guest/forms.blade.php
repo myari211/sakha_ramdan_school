@@ -26,28 +26,28 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>    
-                        <div class="tab-content pt-2 pl-1" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                @include('guest.general')
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                @include('guest.father')
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                @include('guest.mother')
-                            </div>
-                            <div class="tab-pane fade" id="pills-step" role="tabpanel" aria-labelledby="pills-step-tab">
-                                @include('guest.step')
-                            </div>
                         </div>
-                        <div class="row mt-4 d-flex justify-content-center">
-                            <div class="col-lg-10 d-flex justify-content-end">
-                                <button type="button" class="btn btn-amber btn-md">
-                                    Download Formulir
-                                </button>
+                        <form method="/guest/send">
+                            <div class="tab-content pt-2 pl-1" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    @include('guest.general')
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    @include('guest.father')
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    @include('guest.mother')
+                                </div>
+                                <div class="tab-pane fade" id="pills-step" role="tabpanel" aria-labelledby="pills-step-tab">
+                                    @include('guest.step')
+                                </div>
                             </div>
-                        </div>
+                            <div class="row d-flex justify-content-center mt-4">
+                                <div class="col-lg-10">
+                                    <button type="submit" class="btn teal darken-3 btn-block text-white">Kirim</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

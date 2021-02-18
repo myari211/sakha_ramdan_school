@@ -8,7 +8,7 @@
 <div class="row d-flex justify-content-center d-flex justify-content-center">
     <div class="col-lg-10">
         <div class="md-form">
-            <input type="text" name="name_ayah_kandung" class="form-control" id="ayah_kandung">
+            <input type="text" name="nama_ayah" class="form-control" id="ayah_kandung">
             <label for="ayah_kandung">Nama Lengkap</label>
         </div>
     </div>
@@ -30,7 +30,7 @@
 <div class="row d-flex justify-content-center">
     <div class="col-lg-5">
         <label>Agama</label>
-        <select name="agama" class="form-control">
+        <select name="agama_ayah" class="form-control">
             <option value="islam">Islam</option>
             <option value="protestan">Protestan</option>
             <option value="katholik">Katholik</option>
@@ -41,7 +41,7 @@
     </div>
     <div class="col-lg-5">
         <div class="md-form">
-            <input type="text" name="kewarganegaraan" class="form-control" id="kewarganegaraan">
+            <input type="text" name="kewarganegaraan_ayah" class="form-control" id="kewarganegaraan">
             <label for="kewarganegaraan">Kewarganegaraan</label>
         </div>
     </div>
@@ -49,7 +49,7 @@
 <div class="row d-flex justify-content-center">
     <div class="col-lg-5">
         <label>Pendidikan Terakhir</label>
-        <select name="pendidikan_terakhir" class="form-control">
+        <select name="pendidikan_terakhir_ayah" class="form-control">
             <option value="sd">Sekolah Dasar</option>
             <option value="sltp">Menengah Pertama</option>
             <option value="slta">Menengah Atas/Kejuruan</option>
@@ -60,7 +60,7 @@
     </div>
     <div class="col-lg-5">
         <div class="md-form">
-            <input type="text" name="pekerjaan" class="form-control" id="pekerjaan">
+            <input type="text" name="pekerjaan_ayah" class="form-control" id="pekerjaan">
             <label for="pekerjaan">Pekerjaan</label>
         </div>
     </div>
@@ -68,7 +68,7 @@
 <div class="row d-flex justify-content-center">
     <div class="col-lg-10">
         <div class="md-form">
-            <input type="text" name="penghasilan" class="form-control" id="penghasilan">
+            <input type="text" name="penghasilan_ayah" class="form-control" id="penghasilan">
             <label for="penghasilan">Penghasilan</label>
         </div>
     </div>
@@ -76,7 +76,7 @@
 <div class="row d-flex justify-content-center">
     <div class="col-lg-10">
         <div class="md-form">
-            <input type="text" name="alamat" class="form-control" id="alamat">
+            <input type="text" name="alamat_ayah" class="form-control" id="alamat">
             <label for="alamat">Alamat</label>
         </div>
     </div>

@@ -115,7 +115,7 @@
                 </button>
                 <div type="d-flex justify-content-end">
                     <button type="button" class="btn btn-md teal darken-3 text-white" data-toggle="modal" data-target="#login">Log In</button>
-                    <button type="button" class="btn btn-md teal darken-3 text-white" onclick="window.location='/forms';" id="regis">Daftar</button>
+                    <button type="button" class="btn btn-md teal darken-3 text-white" onclick="window.location='/forms';">Daftar</button>
                 </div>
             </div>
                 

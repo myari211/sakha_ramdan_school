@@ -33,3 +33,6 @@ use Illuminate\Support\Facades\Route;
     Route::get('/smk', 'Guest\GuestController@smk')->name('smk');
     Route::get('/smp', 'Guest\GuestController@smp')->name('smp');
     Route::get('/ut', 'Guest\GuestController@ut');
+
+    //forms
+    Route::post('/guest/send', 'Guest\GuestController@pendaftaran')->name('forms_pendaftaran');

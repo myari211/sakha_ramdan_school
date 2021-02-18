@@ -1,3 +1,3 @@
 $('#advertisment').modal({
     show:true,
-})
+});
