@@ -171,7 +171,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="md-form">
-                                    <input type="text" name="olahraga" class="form-control" id="olahraga">
+                                    <input type="text" name="olah_raga" class="form-control" id="olahraga">
                                     <label for="olahraga">Olah Raga</label>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="md-form">
-                                    <input type="text" name="lain-lain" class="form-control" id="lain-lain">
+                                    <input type="text" name="lain_lain" class="form-control" id="lain-lain">
                                     <label for="lain-lain">Lain - Lain</label>
                                 </div>
                             </div>

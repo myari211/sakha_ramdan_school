@@ -76,7 +76,7 @@
                 </div>
                 <div>
                     <button type="button" class="btn teal darken-3 btn-sm text-white" data-toggle="modal" data-target="#login">Log In</button>
-                    <button type="button" class="btn teal darken-3 btn-sm text-white" onclick="openRegis();" id="regis">Daftar</button>
+                    <button type="button" class="btn teal darken-3 btn-sm text-white" onclick="window.location='/forms';" id="regis">Daftar</button>
                 </div>
             </nav>
         </div>

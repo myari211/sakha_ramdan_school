@@ -36,3 +36,18 @@ use Illuminate\Support\Facades\Route;
 
     //forms
     Route::post('/guest/send', 'Guest\GuestController@pendaftaran')->name('forms_pendaftaran');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+//admin
+Route::middleware('role:admin')->group( function() {
+    Route::get('/admin/dashboard', 'Admin\AdminController@dashboard')->name('admin.page');
+    Route::get('/admin/pendaftar', 'Admin\AdminController@pendaftar');
+});
+
+Route::get('user-page', function()  {
+    return 'Halaman Untuk User';
+});

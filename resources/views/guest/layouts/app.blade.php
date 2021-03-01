@@ -75,7 +75,7 @@
                     <ul>
                 </div>
                 <div>
-                    <button type="button" class="btn teal darken-3 btn-sm text-white" data-toggle="modal" data-target="#login">Log In</button>
+                    <button type="button" class="btn teal darken-3 btn-sm text-white" onclick="window.location='/login';">Log In</button>
                 </div>
             </nav>
         </div>
@@ -174,7 +174,7 @@
         @include('master.js')
         @include('guest.layouts.footer')
         <!-- Modal -->
-        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        {{-- <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content" style="background-color:#fafafa;">
                     <div class="modal-body pb-5">
@@ -183,30 +183,33 @@
                                 <h4>Log In</h4>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-center mt-4">
-                            <div class="col-lg-10">
-                                <div class="md-form md-outline">
-                                    <input type="text" name="username" class="form-control" id="username">
-                                    <label for="username">Username</label>
+                        <form method="post" action="{{ route('login') }}">
+                            @csrf
+                            <div class="row d-flex justify-content-center mt-4">
+                                <div class="col-lg-10">
+                                    <div class="md-form md-outline">
+                                        <input type="text" name="username" class="form-control" id="username">
+                                        <label for="username">Username</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="md-form md-outline mt-0">
-                                    <input type="password" name="password" class="form-control" id="password">
-                                    <label for="password">Password</label>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="md-form md-outline mt-0">
+                                        <input type="password" name="password" class="form-control" id="password">
+                                        <label for="password">Password</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-10">
-                                <button type="submit" class="btn btn-amber btn-md btn-block">Log In</button>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-10">
+                                    <button type="submit" class="btn btn-amber btn-md btn-block">Log In</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </body>
 </html>

@@ -41,8 +41,8 @@
     </div>
     <div class="col-lg-5">
         <div class="md-form">
-            <input type="text" name="kewarganegaraan_ayah" class="form-control" id="kewarganegaraan">
-            <label for="kewarganegaraan">Kewarganegaraan</label>
+            <input type="text" name="nationality_father" class="form-control" id="kewarganegaraan_ayah">
+            <label for="kewarganegaraan_ayah">Kewarganegaraan</label>
         </div>
     </div>
 </div>

@@ -8,22 +8,22 @@
 <div class="row d-flex justify-content-center d-flex justify-content-center">
     <div class="col-lg-10">
         <div class="md-form">
-            <input type="text" name="nama_ibu" class="form-control" id="ayah_kandung">
-            <label for="ayah_kandung">Nama Lengkap</label>
+            <input type="text" name="nama_ibu" class="form-control" id="ibu_kandung">
+            <label for="ibu_kandung">Nama Lengkap</label>
         </div>
     </div>
 </div>
 <div class="row d-flex justify-content-center d-flex justify-content-center">
     <div class="col-lg-4">
         <div class="md-form">
-            <input type="text" name="tempat_lahir_ibu" class="form-control" id="tempat_lahir_ayah">
-            <label for="tempat_lahir_ayah">Tempat Lahir</label>
+            <input type="text" name="tempat_lahir_ibu" class="form-control" id="tempat_lahir_ibu">
+            <label for="tempat_lahir_ibu">Tempat Lahir</label>
         </div>
     </div>
     <div class="col-lg-6">
         <div class="md-form">
-            <input type="date" name="tanggal_lahir_ibu" class="form-control" id="tanggal_lahir_ayah">
-            <label for="tanggal_lahir_ayah">Tanggal Lahir</label>
+            <input type="date" name="tanggal_lahir_ibu" class="form-control" id="tanggal_lahir_ibu">
+            <label for="tanggal_lahir_ibu">Tanggal Lahir</label>
         </div>
     </div>
 </div>

@@ -28,14 +28,14 @@ class CreatePendaftaransTable extends Migration
             $table->unsignedInteger('jumlah_keluarga_angkat')->nullable();
             $table->string('status');
             $table->string('kesenian');
-            $table->string('olah_raga');
+            $table->string('olah_raga')->nullable();
             $table->string('organisasi')->nullable();
             $table->string('lain_lain')->nullable();
             $table->string('nama_ayah');
             $table->string('tempat_lahir_ayah');
             $table->date('tanggal_lahir_ayah');
             $table->string('agama_ayah');
-            $table->string('kewarganegaraan_ayah');
+            $table->string('kewarganegaraan_ayah')->nullable();
             $table->string('pendidikan_terakhir_ayah');
             $table->string('pekerjaan_ayah');
             $table->string('penghasilan_ayah');

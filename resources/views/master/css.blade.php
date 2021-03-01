@@ -12,5 +12,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/icon.ico') }}">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/yprsa.css') }}" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 <title>Yayasan Pendidikan Sakha Ramdan Aditya</title>
