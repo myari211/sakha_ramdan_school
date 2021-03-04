@@ -46,6 +46,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('role:admin')->group( function() {
     Route::get('/admin/dashboard', 'Admin\AdminController@dashboard')->name('admin.page');
     Route::get('/admin/pendaftar', 'Admin\AdminController@pendaftar');
+    Route::get('/admin/pendaftar/{id}', 'Admin\AdminController@pendaftar_details');
 });
 
 Route::get('user-page', function()  {

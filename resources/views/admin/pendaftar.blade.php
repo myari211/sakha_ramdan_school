@@ -29,7 +29,7 @@
                                     <td>{{ $data->Kewarganegaraan }}</td>
                                     <td>{{ $data->agama }}</td>
                                     <td>
-                                        <button type="button" class="btn btn-sm btn-primary p-2">
+                                        <button type="button" class="btn btn-sm btn-primary p-2" onclick="location.href='/admin/pendaftar/{{ $data->id }}';">
                                             <i class="fas fa-eye text-white"></i>
                                         </button>
                                         <button type="button" class="btn btn-sm btn-danger p-2">

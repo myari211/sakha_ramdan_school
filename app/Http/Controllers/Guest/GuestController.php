@@ -82,10 +82,8 @@ class GuestController extends Controller
         ]);
 
         if($validate->fails()){
-            // dd($validate->fails());
+            echo "gagal";
         }
-        
-        // dd($request->all());       
     
         $pendaftaran = Pendaftaran::create([
             "id" => Uuid::uuid4()->toString(),  
@@ -134,6 +132,7 @@ class GuestController extends Controller
             "penghasilan_wali" => $request->penghasilan_wali,
             "alamat_wali" => $request->alamat_wali,
         ]);
+
 
         return redirect('/');
 

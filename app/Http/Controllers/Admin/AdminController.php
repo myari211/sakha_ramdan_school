@@ -19,4 +19,11 @@ class AdminController extends Controller
 
         return view('admin.pendaftar', compact('pendaftar'));
     }
+
+    public function pendaftar_details($id){
+        
+
+
+        return view('admin.pendaftar_details');
+    }
 }

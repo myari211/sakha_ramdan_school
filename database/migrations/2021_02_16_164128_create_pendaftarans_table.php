@@ -14,7 +14,7 @@ class CreatePendaftaransTable extends Migration
     public function up()
     {
         Schema::create('pendaftarans', function (Blueprint $table) {
-            $table->id();
+            $table->string('id')->primary();
             $table->string('keahlian');
             $table->string('nama_lengkap');
             $table->string('nama_panggilan');
