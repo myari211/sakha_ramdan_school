@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Pendaftaran;
 
 class AdminController extends Controller
@@ -22,8 +23,8 @@ class AdminController extends Controller
 
     public function pendaftar_details($id){
         
+        $pendaftar = DB::table('pendaftarans')->where('id', $id)->get();
 
-
-        return view('admin.pendaftar_details');
+        return view('admin.pendaftar_details', compact('pendaftar'));
     }
 }
