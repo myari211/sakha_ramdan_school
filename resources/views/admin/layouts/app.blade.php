@@ -15,7 +15,10 @@
             Pendaftar
             <i class="fas fa-user"></i>
         </a>
-        <a href="#">TBD</a>
+        <a href="/admin/layouts/home" class="d-flex justify-content-between align-items-center">
+            Admin Content
+            <i class="fas fa-table"></i>
+        </a>
         <a href="#">TBD</a>
     </div>
     <div class="main">
