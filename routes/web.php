@@ -48,10 +48,20 @@ Route::middleware('role:admin')->group( function() {
     Route::get('/admin/pendaftar', 'Admin\AdminController@pendaftar');
     Route::get('/admin/pendaftar/{id}', 'Admin\AdminController@pendaftar_details');
     Route::get('/admin/layouts/home', 'Admin\AdminController@home');
+    Route::get('/admin/layouts/facilites', 'Admin\AdminController@facilites');
+    Route::get('/admin/layouts/extraculiculer', 'Admin\AdminController@extraculiculer');
 
     //frontend
-    Route::post('/admin/layouts/home/upload', 'Admin\AdminController@home_upload');
-});
+        //carousel
+        Route::post('/admin/layouts/home/upload', 'Admin\AdminController@home_upload'); 
+        Route::post('/admin/layouts/home/delete/{id}', 'Admin\AdminController@home_delete');
+        //facilites
+        Route::post('/admin/layouts/facilities/upload', 'Admin\AdminController@facilities_upload');
+        Route::post('/admin/layouts/facilities/delete/{id}', 'Admin\AdminController@facilities_delete');
+        //exkul
+        Route::post('/admin/layouts/extraculiculer/upload', 'Admin\AdminController@extraculiculer_upload');
+
+    });
 
 Route::get('user-page', function()  {
     return 'Halaman Untuk User';

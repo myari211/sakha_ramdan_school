@@ -9,15 +9,24 @@ use Illuminate\Support\Facades\Validator;
 use Ramsey\Uuid\Uuid;
 use App\User;
 use App\Pendaftaran;
+use App\Facilities;
+use App\Extraculiculer;
 
 class GuestController extends Controller
 {
     public function index(){
-        return view('guest.index');
+
+        $home = DB::table('home_images')->get();
+
+        return view('guest.index', compact('home'));
     }
 
     public function facilites(){
-        return view('guest.facilities');
+
+        $facilities = Facilities::all();
+
+        $extraculiculer = Extraculiculer::all();
+        return view('guest.facilities', compact('facilities', 'extraculiculer'));
     }
 
     public function gallery(){

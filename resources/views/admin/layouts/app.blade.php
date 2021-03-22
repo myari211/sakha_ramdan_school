@@ -3,6 +3,7 @@
     @include('master.css')
 </head>
 <body>
+    @include('sweetalert::alert')
     <div class="sidenav">
         <a href="#" class="d-flex justify-content-center">
             <img src="{{ asset('img/logo.png') }}" style="width:150px;">
@@ -19,7 +20,14 @@
             Admin Content
             <i class="fas fa-table"></i>
         </a>
-        <a href="#">TBD</a>
+        <a href="/admin/layouts/facilites" class="d-flex justify-content-between align-items-center">
+            Facilites
+            <i class="fas fa-school"></i>
+        </a>
+        <a href="/admin/layouts/extraculiculer" class="d-flex justify-content-between align-items-center">
+            Extraculiculer
+            <i class="fas fa-basketball-ball"></i>
+        </a>
     </div>
     <div class="main">
         <nav class="navbar navbar-expand-lg navbar-dark bg-success d-flex justify-content-end">

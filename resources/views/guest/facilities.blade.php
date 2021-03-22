@@ -7,313 +7,50 @@
         </div>
     </div>
     <div class="row mt-4">
+        @foreach($facilities as $data)
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h5>Kelas</h5>  
+                            <h5>{{ $data->title }}</h5>  
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-7">
                             <p>
-                                Yayasan Pendidikan Sakha Ramdan Aditya memiliki ruang kelas yang sangat nyaman
-                                untuk menunjang kegiatan belajar mengajar dilingkungan pendidikan Yayasan Pendidikan Sakha Ramdan Aditya.
+                                {{ $data->description }}
                             </p>
                         </div>
                         <div class="col-lg-5 d-flex justify-content-center">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:200px">
+                            <img src="{{ asset('img/facilities/'.$data->image ) }}" style="width:200px">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h5>Lapangan</h5>  
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <p>
-                                Yayasan Pendidikan Sakha Ramdan Aditya memiliki ruang kelas yang sangat nyaman
-                                untuk menunjang kegiatan belajar mengajar dilingkungan pendidikan Yayasan Pendidikan Sakha Ramdan Aditya.
-                            </p>
-                        </div>
-                        <div class="col-lg-5 d-flex justify-content-center">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:200px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h5>Lab Komputer</h5>  
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <p>
-                                Yayasan Pendidikan Sakha Ramdan Aditya memiliki ruang kelas yang sangat nyaman
-                                untuk menunjang kegiatan belajar mengajar dilingkungan pendidikan Yayasan Pendidikan Sakha Ramdan Aditya.
-                            </p>
-                        </div>
-                        <div class="col-lg-5 d-flex justify-content-center">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:200px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h5>Lab Bahasa</h5>  
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <p>
-                                Yayasan Pendidikan Sakha Ramdan Aditya memiliki ruang kelas yang sangat nyaman
-                                untuk menunjang kegiatan belajar mengajar dilingkungan pendidikan Yayasan Pendidikan Sakha Ramdan Aditya.
-                            </p>
-                        </div>
-                        <div class="col-lg-5 d-flex justify-content-center">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:200px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col-lg-2">
-            <div class="card">
-                <div class="card-body pb-0">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:120px;">
-                        </div>
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h6>
-                            <strong>Parkiran</strong>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <div class="card">
-                <div class="card-body pb-0">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:120px;">
-                        </div>
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h6>
-                            <strong>Kantin</strong>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <div class="card">
-                <div class="card-body pb-0">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:120px;">
-                        </div>
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h6>
-                            <strong>WC</strong>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <div class="card">
-                <div class="card-body pb-0">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:120px;">
-                        </div>
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h6>
-                            <strong>AC</strong>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <div class="card">
-                <div class="card-body pb-0">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:120px;">
-                        </div>
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h6>
-                            <strong>Projector</strong>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <div class="card">
-                <div class="card-body pb-0">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="{{ asset('img/slider.jpg') }}" style="width:120px;">
-                        </div>
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h6>
-                            <strong>WI-FI</strong>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
     <div class="row mt-5 d-flex justify-content-center">
         <h4>Extraculiculer</h4>
     </div>
     <div class="row mt-4">
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>Pramuka</strong>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>Futsal</strong>
-                        </h5>
+        @foreach($extraculiculer as $data)
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body pb-2">
+                        <div class="row d-flex justify-content-center">
+                            <img src="{{ asset('img/extraculiculer/'.$data->image) }}" style="width:100%; height:200px;">
+                        </div>
+                        <div class="row mt-2 d-flex justify-content-center">
+                            <h5>
+                                <strong>{{ $data->title }}</strong>
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>Basket</strong>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>Paskibra</strong>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>IT Club</strong>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>Volley</strong>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>English Club</strong>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body pb-2">
-                    <div class="row d-flex justify-content-center">
-                        <img src="{{ asset('img/slider.jpg') }}" style="width:190px;">
-                    </div>
-                    <div class="row mt-2 d-flex justify-content-center">
-                        <h5>
-                            <strong>Electrical Club</strong>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection
