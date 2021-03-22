@@ -18,4 +18,4 @@ mix.scripts([
 mix.styles([
     'public/css/app.css',
     'public/css/style.css',
-], 'public/yprsa.css').version();
+], 'public/css/yprsa.css').version();
